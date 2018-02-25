@@ -1,0 +1,28 @@
+
+# Name : HostCek.py python2 versi 0.1
+# By   : Adi pirmansyah aka PIRMANSX
+# Date : senin 25 sep 2017
+*file setting HostCek.py*
+*ket*
+** 'hos' adalah calon bug tambah ';' jika cek host ganda...ato lebih
+       contoh : hos=host000.com;host001.net
+** 'met' adalah method tambah ';' jika cek method ganda....ato lebih
+       contoh : met=GET;DELETE
+** 'pro' adalah proxy:port tambah ';' jika cek proxy ganda....
+       contoh : pro=111.222.333.444:1234;000.999.888.777:8080
+** 'pay' adalah payload ... dimana ...
+      [m] adalah method
+      [h] adalah host
+      [cr] adalah '\r'
+      [lf] adalah '\n'
+      [crlf] adalah '\r\n'
+      *jika belum mahir ane saranin jangan di ubah...
+** 'tim' adalah waktu habis(time out) dalam satuan detik.
+      contoh: tim=3
+####################################
+hos=fb.com
+met=PUT;GET;POST;HEAD;PATCH;TRACE;DELETE;OPTIONS;CONNECT
+pro=10.8.3.8:8080
+pay=[m] http://[h]/ HTTP/1.1[crlf]Host: [h][crlf][crlf]
+tim=5
+####################################
