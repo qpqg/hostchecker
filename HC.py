@@ -260,9 +260,6 @@ if __name__ == '__main__':
 	if v().split('.')[0] != '2':
 		print('[!] kamu menggunakan python versi %s silahkan menggunakan versi 2.x.x'%v().split(' ')[0])
 		exit(1)
-	if OS().upper() != 'LINUX':
-		print('[!] kamu menggunakan %s silahkan menggunakan linux'%OS().upper())
-		exit(1)
 	main()
 else:
 	print('[!] ini bukan module toyol')
